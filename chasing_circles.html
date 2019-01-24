@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chasing Circles</title>
+	<style type="text/css">
+		circle{
+			fill: none;
+			stroke-width: 3.5;
+			animation-name: preloader;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			transform-origin: 170px 170px;/*The rotation is done at (0,0) so we need to change center to (170,170)*/
+			/*will-change: transform;*/
+
+			animation-name: circularMotion;
+		 	animation-duration: 2s;
+		 	animation-iteration-count: infinite;
+		 	animation-timing-function: ease-in-out;
+		}
+		circle:nth-of-type(1) {
+		  stroke-dasharray: 250px;
+		  animation-delay: 0.2s;
+		}
+		circle:nth-of-type(2) {
+		  stroke-dasharray: 150px; 
+		  animation-delay: 0.3s;
+		}
+		circle:nth-of-type(3) {
+		  stroke-dasharray: 150px;
+		  animation-delay: 0.4s;
+		}
+		circle:nth-of-type(4) {
+		  stroke-dasharray: 50px;
+		  animation-delay: 0.5s;
+		}
+		@keyframes circularMotion{
+			50%{
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+		  <circle cx="170" cy="170" r="50" stroke="#E2007C"/>
+		  <circle cx="170" cy="170" r="40" stroke="#404041"/>
+		  <circle cx="170" cy="170" r="30" stroke="#E2007C"/>
+		  <circle cx="170" cy="170" r="20" stroke="#404041"/>
+		</svg>
+	</div>
+</body>
+</html>

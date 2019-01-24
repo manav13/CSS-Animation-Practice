@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strech Out</title>
+	<style type="text/css">
+		.i1{
+			background-color: red;
+			height: 200px;
+			width: 200px;
+			margin: 150px auto;
+			animation-name: strech;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			/*animation-play-state: running;*/
+		}
+		@keyframes strech{
+			0% { transform: scale(.3); background-color: red; border-radius: 100%;}
+			50% { background-color: orange; }
+			100% { transform: scale(1.5); background-color: yellow;}
+		}
+	</style>
+</head>
+<body>
+<div class="i1"></div>
+</body>
+</html>

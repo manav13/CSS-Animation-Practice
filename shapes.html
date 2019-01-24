@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shapes</title>
+	<style type="text/css">
+		@key-frames strech{
+			0% {
+		    transform: scale(.3);
+		    background-color: red;
+		    border-radius: 100%;
+		  }
+		  50% {
+		    background-color: orange;
+		  }
+		  100% {
+		    transform: scale(1.5);
+		    background-color: yellow;
+		  }
+		}
+		body{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+
+		}
+		.i1{
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			display: inline-block;
+			animation-name: example1;
+			animation-duration: 5.0s;
+			animation-delay: 1.5s;
+			animation-iteration-count: infinite;
+		}
+		.i2{
+			background-color: blue;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			display: inline-block;
+			animation-name: example1;
+			animation-duration: 5.0s;
+			animation-delay: 1s;
+			animation-iteration-count: infinite;
+		}
+		.i3{
+			background-color: yellow;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			display: inline-block;
+			animation-name: example1;
+			animation-duration: 5.0s;
+			animation-delay: 0.5s;
+			animation-iteration-count: infinite;
+		}
+		.i4{
+			background-color: black;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			display: inline-block;
+			animation-name: example1;
+			animation-duration: 5.0s;
+			animation-iteration-count: infinite;
+		}
+		.i5{
+			position: absolute;
+			height: 300px;
+			width: 500px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-35%,-25%);
+
+			/*animation-name: example1;
+			animation-duration: 5.0s;*/
+			/*animation-timing-function: ease-out;
+			animation-delay: 0s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			animation-fill-mode: none;
+			animation-play-state: running;*/
+		}
+		@keyframes example1 {
+  			0% { background-color: red; transform: translate(0px, 0px);}
+  			25% { background-color: blue; transform: translate(100px, 0px);}
+  			50% { background-color: green; transform: translate(100px, 100px);}
+  			75% { background-color: yellow; transform: translate(0px, 100px);}
+  			100% { background-color: red; transform: translate(0px, 0px);}
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="i5">
+	<div class="i1"></div>
+	<div class="i2"></div>
+	<div class="i3"></div>
+	<div class="i4"></div>
+	</div>
+</body>
+</html>
