@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elevated Title</title>
+	<style type="text/css">
+		.container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		h1{
+			font-size: 4rem;
+			text-decoration: underline;
+			position: relative;
+			transform: translateY(6rem);
+			animation-name: up;
+			animation-duration: 500ms;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+		}
+		@keyframes up{
+			100%{
+				transform: translateY(0);
+			}
+		}
+		.c1{
+			font-size: 0;
+			position: relative;
+			overflow: hidden;
+			padding-bottom: 0.4rem;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="c1">
+		<h1>Elevated Title Example</h1>
+	</div>
+</div>
+</body>
+</html>

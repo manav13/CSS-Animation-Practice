@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retro-Clickable Accordion</title>
+	<style type="text/css">
+		p{
+			display: none;
+		}
+		:target + p{
+			display: block;
+			transition: height .4s ease-out, padding .4s ease-out
+			padding:10px 15px;
+    		border-bottom:1px solid #ccc;
+		}
+		* {
+			margin:0;
+			padding:0;
+		}
+		html,body {
+			height:100%;
+		}
+		body {
+			display:box;
+			box-orient:vertical;
+			box-pack:center;
+			box-align:center;
+		}
+		div {
+			width:250px;
+			transform: translate(220%,50%);
+		}
+		a {
+			display:block;
+			height:23px;
+			line-height:23px;
+			background:linear-gradient(#eee, #ccc);
+			color:#333;
+			text-decoration:none;
+			text-align:center;
+			text-shadow:0 1px 0 rgba(255,255,255,.5);
+			border-bottom:1px solid #aaa;
+		}
+		#intro {
+			border-radius:2px 2px 0 0;
+		}
+		#contact {
+			border-radius:0 0 3px 3px;
+		}
+		a:hover, a:focus {
+			opacity:.9;
+		}
+		a:active {
+			background:linear-gradient(#ccc, #ddd);
+			color:#000;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<section>
+		<a href="#intro" id="intro">
+		<h1>Introduction</h1>
+		</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section>
+		<a href="#info" id="info">
+		<h1>General Information</h1>
+		</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section>
+		<a href="#contact" id="contact">
+		<h1>Contact us</h1>
+		</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice</title>
+	<style type="text/css">
+		div{
+			background-color: green;
+			width: 50px;
+			border: solid 2px red;
+			border-radius: 10px;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20%;
+			margin-left: 25%;
+			animation-name: rotate;
+			animation-duration: 2s;
+			animation-iteration-count: 1;
+			color: white;
+		}
+		@keyframes rotate{
+			0%{
+				transform: rotate(45deg);
+			}
+			50%{
+				transform: translateX(500px);
+			}
+			70%{
+				transform: translateX(250px) rotate(270deg);
+			}
+			100%{
+				transform: translateX(0px) ;
+			}
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h4>Manav</h4>
+</div>
+</body>
+</html>
