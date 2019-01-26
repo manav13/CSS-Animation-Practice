@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice 2</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background: url("andrew-hughes-261571-unsplash.jpg");
+			background-size: cover;
+			width: 100%;
+		}
+		h1{
+			font-family: Source Sans Pro;
+			font-size: 5rem;
+			left: 50%;
+			top: 50%;
+			margin: 0;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			color: white;
+			text-transform: uppercase;
+		}
+		div{
+			top: 0%;
+			margin: 0;
+			padding: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			background-color: black;
+			box-shadow: 2px 6px 5px #222;
+			opacity: 0;
+			animation: fade 1s 0.5s linear forwards;
+		}
+		ul {
+			padding-left: 0;
+			width: 100%;
+		}
+		ul li{
+			color: white;
+			font-size: 1.5rem;
+			position: relative;
+			display: inline-block;
+			width: 24%; 
+			text-align: center;
+		}
+		@keyframes fade{
+			0%{
+				opacity: 0;
+				transform: translateY(-100px);
+			}
+			100%{
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
+	</style>
+</head>
+<body>
+<div>
+	<ul>
+		<li>Practice</li>
+		<li>Website</li>
+		<li>Contact Us</li>
+		<li>About Us</li>
+	</ul>
+</div>
+<h1>Hello</h1>
+</body>
+</html>
